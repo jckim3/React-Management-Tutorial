@@ -33,7 +33,7 @@ app.get('/api/customers',(req,res)=>{
         'name': ' bskim',
         'birthday':'9761221',
         'gender':'man',
-        'job':'student'
+        'job':'engineer'
       },      
       ])
 })
