@@ -26,7 +26,7 @@ const customers = [
   'name': ' jckim',
   'birthday':'9761221',
   'gender':'man',
-  'job':'student'
+  'job':'bisiness'
 },
 {
   'id':2,
