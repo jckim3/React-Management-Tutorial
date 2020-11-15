@@ -105,6 +105,7 @@ class App extends Component {
                 <TableCell>Birthday</TableCell>
                 <TableCell>Gender</TableCell>
                 <TableCell>Job</TableCell>
+                <TableCell>Edit</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
