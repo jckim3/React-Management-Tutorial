@@ -1,0 +1,8 @@
+{
+    "host": "management-turtorial.cxgjoggaopuv.us-east-2.rds.amazonaws.com",
+    "user": "admin",
+    "password" : "Kjc32355*",
+    "port":"3306",
+    "database": "management"
+}
+
