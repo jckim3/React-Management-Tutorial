@@ -66,11 +66,13 @@ const styles = theme =>({
 //function App() {
 class App extends Component {
 
+  // 변경할때는 SetState 를 사용하고, 변경되었을때는 render() 가 불려진다. 
   state = {
     customers: "",
     completed : 0 // 정수형 변수 추가 for Progress bar
   }
 
+  // componet 가 초기화가 끝나고(Mount) 실행되는 함수.
   componentDidMount(){
     this.timer = setInterval(this.progress,20);
     //  fetch the data from Server
@@ -80,6 +82,8 @@ class App extends Component {
   }
 
   callApi = async()=>{
+
+    // 클라이런트에서 서버에 요청
     const response =  await fetch('/api/customers');
     const  body = await response.json();
     return body;
@@ -90,6 +94,7 @@ class App extends Component {
     this.setState({completed : completed >=100 ? 0 : completed+1})
   }
 
+  // component 그리기  caution : <div> </div> 로  묶기
   render()
   {
     const {classes}= this.props;
@@ -122,7 +127,8 @@ class App extends Component {
             </TableBody>
           </Table>
         </Paper>    
-        <CustomerAdd/>
+        {/* // CusomerAdd class 정의, 메뉴정의 */}
+        <CustomerAdd/>    
       </div>   
 
 
